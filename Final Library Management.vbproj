@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41066CAD-2ADB-483E-AC13-9A73B63CEBEA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Final_Library_Management.My.MyApplication</StartupObject>
+    <RootNamespace>Final_Library_Management</RootNamespace>
+    <AssemblyName>Final Library Management</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Final Library Management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Final Library Management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BookExistinformation.Designer.vb">
+      <DependentUpon>BookExistinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookExistinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookinformation.Designer.vb">
+      <DependentUpon>Bookinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookissueexistinformation.Designer.vb">
+      <DependentUpon>Bookissueexistinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookissueexistinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookissueinformation.Designer.vb">
+      <DependentUpon>Bookissueinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookissueinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookissuepage.Designer.vb">
+      <DependentUpon>Bookissuepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookissuepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookrecordpage.Designer.vb">
+      <DependentUpon>Bookrecordpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookrecordpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookreturnexistinformation.Designer.vb">
+      <DependentUpon>Bookreturnexistinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bookreturnexistinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReturnInformation.Designer.vb">
+      <DependentUpon>BookReturnInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReturnInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookReturnpage.Designer.vb">
+      <DependentUpon>BookReturnpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookReturnpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeeexistinformation.Designer.vb">
+      <DependentUpon>Employeeexistinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeexistinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeeinformation.Designer.vb">
+      <DependentUpon>Employeeinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeeinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employeepage.Designer.vb">
+      <DependentUpon>Employeepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employeepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finerelatedpage.Designer.vb">
+      <DependentUpon>Finerelatedpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Finerelatedpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginpage.Designer.vb">
+      <DependentUpon>Loginpage.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.vb">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StudentExistingRecord.Designer.vb">
+      <DependentUpon>StudentExistingRecord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StudentExistingRecord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentinformation.Designer.vb">
+      <DependentUpon>Studentinformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Studentinformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Studentpage.Designer.vb">
+      <DependentUpon>Studentpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Studentpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookExistinformation.resx">
+      <DependentUpon>BookExistinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookinformation.resx">
+      <DependentUpon>Bookinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookissueexistinformation.resx">
+      <DependentUpon>Bookissueexistinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookissueinformation.resx">
+      <DependentUpon>Bookissueinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookissuepage.resx">
+      <DependentUpon>Bookissuepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookrecordpage.resx">
+      <DependentUpon>Bookrecordpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookreturnexistinformation.resx">
+      <DependentUpon>Bookreturnexistinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReturnInformation.resx">
+      <DependentUpon>BookReturnInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookReturnpage.resx">
+      <DependentUpon>BookReturnpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeeexistinformation.resx">
+      <DependentUpon>Employeeexistinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeeinformation.resx">
+      <DependentUpon>Employeeinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employeepage.resx">
+      <DependentUpon>Employeepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finerelatedpage.resx">
+      <DependentUpon>Finerelatedpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginpage.resx">
+      <DependentUpon>Loginpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentExistingRecord.resx">
+      <DependentUpon>StudentExistingRecord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentinformation.resx">
+      <DependentUpon>Studentinformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Studentpage.resx">
+      <DependentUpon>Studentpage.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lMS login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGINLOGO.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LMS.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download empadd.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empimg3.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageshome.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%291.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %281%292.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookpng1.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewbookrec.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
